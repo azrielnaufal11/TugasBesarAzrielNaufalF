@@ -166,13 +166,13 @@ for kode in kodeNegara:
         code1 = kode["alpha-3"]
         region1 = kode["region"]
         subregion1 = kode["sub-region"]
-        produksi = raw2[0][2]
+        produksi = raw2[0][0]
 for kode in kodeNegara:
     for any in raw:
         code2 = str(kode["alpha-3"])
         region2 = kode["region"]
         subregion2 = kode["sub-region"]
-        produksi2 = raw2[0][2]
+        produksi2 = raw2[0][0]
 dict2["Kode"]= [code1,code2]
 dict2["Region"] = [region1,region2]
 dict2["Sub-region"]=[subregion1,subregion2]
