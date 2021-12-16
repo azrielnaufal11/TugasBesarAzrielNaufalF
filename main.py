@@ -1,4 +1,9 @@
 """
+NAMA    : AZRIEL NAUFAL FADILAH
+NIM     : 12220022
+UJIAN AKHIR SEMESTER 
+IF2112 Pemrograman Komputer K-02
+
 Aplikasi Streamlit untuk menggambarkan informasi seputar data produksi minyak mentah dari berbagai negara di seluruh dunia
 Sumber data berasal dari file “produksi_minyak_mentah.csv”, dimana nama lengkap negaranya dapat dilihat pada file “kode_negara_lengkap.json”
 Referensi API Streamlit: https://docs.streamlit.io/library/api-reference
@@ -17,6 +22,7 @@ import csv as c
 ############### title ###############
 st.set_page_config(layout="wide")  # this needs to be the first Streamlit command called
 st.title("Statistik Produksi Minyak Mentah dari Berbagai Negara di Dunia")
+st.markdown(" Dibuat oleh : Azriel Naufal Fadilah / 12220022 ")
 st.markdown("*Sumber data berasal dari file “produksi_minyak_mentah.csv” dan file “kode_negara_lengkap.json”")
 ############### title ###############)
 
@@ -59,7 +65,7 @@ del list_tahun[0]
 
 namaNegara = st.sidebar.selectbox("Pilih negara", list_namaNegara)
 pilihanTahun = st.sidebar.selectbox("Pilih tahun", list_tahun)
-n_tampil = st.sidebar.number_input("Jumlah baris dalam tabel peringkat produksi terbesar yang ditampilkan", min_value=1, max_value=None, value=3)
+n_tampil = st.sidebar.number_input("Jumlah baris (negara) dalam tabel peringkat produksi terbesar yang ditampilkan", min_value=1, max_value=None, value=3)
 ############### sidebar ###############
 
 ############### bottom column ###############
@@ -139,7 +145,7 @@ for num in range(int(n_tampil)):
 cmap_name = 'tab10'
 cmap = cm.get_cmap(cmap_name)
 colors = cmap.colors[:int(n_tampil)]
-right_col.header(str(n_tampil)+" Negara dengan Produksi Terbesar Kumulatif dari Tahun 1971-2015")
+right_col.header(str(n_tampil)+" Negara dengan Produksi Terbesar Kumulatif dari Keseluruhan Tahun (1971-2015)")
 fig, ax = plt.subplots()
 ax.bar(absis3, ordinat3, color=colors)
 ax.set_xlabel("Produksi Minyak Mentah", fontsize=12)
