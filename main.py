@@ -236,7 +236,7 @@ for kode in kodeNegara:
 dict3["Kode"]= [code1,code2]
 dict3["Region"] = [region1,region2]
 dict3["Sub-region"]=[subregion1,subregion2]
-dict2["Produksi"]= [produksi3,produksi4]
+dict3["Produksi"]= [produksi3,produksi4]
 table2 = pd.DataFrame(dict3)
 
 dict5 = dict()
