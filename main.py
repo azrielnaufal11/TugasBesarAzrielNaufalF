@@ -155,7 +155,7 @@ reg = []
 subreg = []
 raw4 = []
 for any in raw:
-    if any[2]==str(pilihanTahun) and any[3]=!0:
+    if any[2]==str(pilihanTahun) and any[3]!=0:
         raw4.append((float(any[3]),any[0]))
 raw4.sort()
 
@@ -210,7 +210,7 @@ subreg2 = []
 raw5 = []
 
 for name,integer in dict1.items():
-    if integer =! 0:
+    if integer != 0:
         a = integer,name
         raw5.append(a)
 raw5.sort()
