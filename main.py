@@ -155,8 +155,9 @@ reg = []
 subreg = []
 raw4 = []
 for any in raw:
-    if any[2]==str(pilihanTahun) and any[3]!=0:
-        raw4.append((float(any[3]),any[0]))
+    if any[3]!=0:
+        if any[2]==str(pilihanTahun):
+            raw4.append((float(any[3]),any[0]))
 raw4.sort()
 
 dict2[""] = ["Produksi terbesar","Produksi terkecil"]
