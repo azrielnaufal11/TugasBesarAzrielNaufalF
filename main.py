@@ -204,7 +204,7 @@ dict4["Sub-region"] = subreg
 table3 = pd.DataFrame(dict4)
 
 with st.expander("Summary Tahun "+pilihanTahun):
-    st.subheader("Tabel Summary Tahun "+str(pilihanTahun))
+    st.subheader("Tabel Negara Dengan Produksi Terbesar dan Terkecil pada Tahun "+str(pilihanTahun))
     st.table(table1)
     st.subheader("Tabel Negara dengan 0 Produksi Tahun "+str(pilihanTahun))
     st.write("Semua negara yang tidak memproduksi minyak mentah pada tahun "+pilihanTahun)
@@ -262,8 +262,8 @@ dict5["Region"] = reg2
 dict5["Sub-region"] = subreg2
 table4 = pd.DataFrame(dict5)
     
-with st.expander("Summary Kumulatif"):
-    st.subheader("Tabel Summary Kumulatif")
+with st.expander("Summary Kumulatif (1971-2015)"):
+    st.subheader("Tabel Negara Dengan Produksi Komulatif Terbesar dan Terkecil pada Keseluruhan Tahun (1971-2015)")
     st.table(table2)
     st.subheader("Tabel Negara dengan 0 Produksi Kumulatif dari Tahun 1971-2015")
     st.write("Semua negara yang tidak memproduksi minyak mentah untuk keseluruhan tahun")
