@@ -30,7 +30,7 @@ st.markdown("*Sumber data berasal dari file “produksi_minyak_mentah.csv” dan
 image = Image.open('download.jpg')
 st.sidebar.image(image)
 
-st.sidebar.title("Pengaturan")
+st.sidebar.title("Input Menu")
 left_col, mid_col, right_col = st.columns(3)
 
 
