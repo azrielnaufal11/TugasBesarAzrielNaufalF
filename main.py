@@ -155,7 +155,7 @@ reg = []
 subreg = []
 raw4 = []
 for any in raw:
-    if any[2]==str(pilihanTahun) and int(any[3])!=0:
+    if any[2]==str(pilihanTahun) and float(any[3])!=0:
         raw4.append((float(any[3]),any[0]))
 raw4.sort()
 
