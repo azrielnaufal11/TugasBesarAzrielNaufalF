@@ -172,7 +172,7 @@ for kode in kodeNegara:
         code2 = str(kode["alpha-3"])
         region2 = kode["region"]
         subregion2 = kode["sub-region"]
-        produksi2 = raw2[0][0]
+        produksi2 = raw4[0][0]
 dict2["Kode"]= [code1,code2]
 dict2["Region"] = [region1,region2]
 dict2["Sub-region"]=[subregion1,subregion2]
@@ -226,14 +226,17 @@ for kode in kodeNegara:
         code1 = kode["alpha-3"]
         region1 = kode["region"]
         subregion1 = kode["sub-region"]
+        produksi3=raw3[0][0]
 for kode in kodeNegara:
     if kode["name"]==raw5[0][1]:
         code2 = str(kode["alpha-3"])
         region2 = kode["region"]
         subregion2 = kode["sub-region"]
+        produksi4=raw5[0][0]
 dict3["Kode"]= [code1,code2]
 dict3["Region"] = [region1,region2]
 dict3["Sub-region"]=[subregion1,subregion2]
+dict2["Produksi"]= [produksi3,produksi4]
 table2 = pd.DataFrame(dict3)
 
 dict5 = dict()
