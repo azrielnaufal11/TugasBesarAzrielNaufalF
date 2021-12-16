@@ -162,18 +162,24 @@ raw4.sort()
 dict2[""] = ["Produksi terbesar","Produksi terkecil"]
 dict2["Negara"] = [raw2[0][1],raw4[0][1]]
 for kode in kodeNegara:
-    if kode["name"]==raw2[0][1]:
-        code1 = kode["alpha-3"]
-        region1 = kode["region"]
-        subregion1 = kode["sub-region"]
+    for any in raw:
+        if kode["name"]==raw2[0][1]:
+            code1 = kode["alpha-3"]
+            region1 = kode["region"]
+            subregion1 = kode["sub-region"]
+            produksi = any[3]
 for kode in kodeNegara:
-    if kode["name"]==raw4[0][1]:
-        code2 = str(kode["alpha-3"])
-        region2 = kode["region"]
-        subregion2 = kode["sub-region"]
+    for any in raw:
+        if kode["name"]==raw4[0][1]:
+            code2 = str(kode["alpha-3"])
+            region2 = kode["region"]
+            subregion2 = kode["sub-region"]
+            produksi2 = any[3]
 dict2["Kode"]= [code1,code2]
 dict2["Region"] = [region1,region2]
 dict2["Sub-region"]=[subregion1,subregion2]
+dict2["Produksi"]=[produksi,produksi2]
+
 table1 = pd.DataFrame(dict2)
 
 dict4 = dict()
