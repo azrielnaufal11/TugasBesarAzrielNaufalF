@@ -121,8 +121,8 @@ raw3 = []
 absis3 = []
 ordinat3 = []
 for name in list_namaNegara:
+    sum = 0
     for any in raw:
-        sum = 0
         if any[0]==name:
             sum = sum+float(any[3])
             dict1[name] = sum
