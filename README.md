@@ -1,5 +1,5 @@
 ## Check the live app
-Check out the live app [here](https://share.streamlit.io/azrielnaufal11/tugasbesarazrielnaufal/main/main.py). This demo is hosted with Streamlit sharing, check streamlit.io/sharing for more info.
+Check out the live app [here](https://share.streamlit.io/azrielnaufal11/tugasbesarazrielnaufalf/main/12220022_AzrielNaufalFadilah.py). This demo is hosted with Streamlit sharing, check streamlit.io/sharing for more info.
 
 ## Run the app locally
 ### Install streamlit via pip
@@ -12,7 +12,7 @@ conda install -c conda-forge streamlit
 ```
 ### Run
 ```
-streamlit run https://raw.githubusercontent.com/nurahmadi/streamlit_demo/main/transjakarta.py
+streamlit run https://raw.githubusercontent.com/azrielnaufal11/tugasbesarazrielnaufalf/main/12220022_AzrielNaufalFadilah.py
 ```
 ## Required packages
 - Streamlit
